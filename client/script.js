@@ -3,7 +3,7 @@ import user from './assets/user.svg';
 
 const form = document.querySelector('form');
 const chatContainer = document.querySelector('#chat_container');
-
+alert('Welcome to AI bot created by Vikash, Click OK to continue');
 let loadInterval;
 
 function loader(element) {
@@ -78,6 +78,7 @@ const handleSubmit = async (e) => {
 
   loader(messageDiv);
   // Fetch data from server
+  // https://vixai.onrender.com , http://localhost:5000
   const response = await fetch('https://vixai.onrender.com', {
     method: 'POST',
     headers: {
